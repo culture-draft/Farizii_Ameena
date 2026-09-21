@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="A beautiful wedding invitation celebrating the journey of two hearts becoming one.">
+
+    <title>Bride & Groom | Wedding Invitation</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Italianno&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         GSAP
+    ====================================================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+<!-- =====================================================
+         CONFETTI
+    ====================================================== -->
+
+    <canvas id="confettiCanvas"></canvas>
+
+
+    <!-- =====================================================
+         SECTION 1 — HERO / ENTRANCE
+    ====================================================== -->
+
+    <section class="hero section" id="home">
+
+        <div class="hero-content">
+            <img class="hero-background-art" src="images/bg.png" alt="Salman and Ameena" draggable="false">
+            <img class="falling-hero-art" src="images/fg.png" alt="Cherry red wedding decoration" draggable="false">
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO BEGIN</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         SECTION 2 — OUR SOUNDTRACK
+    ====================================================== -->
+
+    <section class="music-section section" id="music" aria-label="Our soundtrack">
+
+        <div class="container center-content">
+
+            <span class="eyebrow reveal">OUR SOUNDTRACK</span>
+
+            <h2 class="section-title reveal">Let's begin with our song</h2>
+            <div class="tilda-music-player reveal">
+                <div class="tilda-music-image" id="tildaMusicImage">
+                    <img
+                        src="https://static.tildacdn.com/tild6138-3634-4838-a663-663263336664/photo.png"
+                        alt="Wedding music">
+                </div>
+
+                <button
+                    class="tilda-music-button"
+                    id="tildaMusicButton"
+                    type="button"
+                    aria-label="Play wedding song"
+                    aria-pressed="false">
+                    <img
+                        src="https://static.tildacdn.com/tild3435-6465-4661-b239-323231613465/Group_48677.svg"
+                        alt="Play">
+                </button>
+
+                <audio id="weddingSong" preload="metadata">
+                    <source src="audio/wedding-song.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <span class="music-status" id="musicStatus">TAP TO PLAY</span>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         SECTION 3 — NOTE TO GUESTS
+    ====================================================== -->
+
+    <section class="note-section section" id="note">
+
+        <div class="container note-grid">
+
+            <div class="note-content reveal-left">
+
+                <span class="small-script">
+                    A little note
+                </span>
+
+                <h2 class="section-title note-title">
+                    For the people who make our story complete.
+                </h2>
+
+                <p class="big-note">
+                    Your love, prayers, and presence mean more to us than words can say.
+                </p>
+
+                <p class="note-description">
+                    We cannot wait to celebrate this beautiful beginning with you.
+                </p>
+
+                <div class="countdown-card reveal" aria-label="Countdown to the wedding">
+                    <span class="countdown-label">COUNTING DOWN...</span>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-unit"><strong id="days">00</strong><span>Days</span></div>
+                        <i>:</i>
+                        <div class="countdown-unit"><strong id="hours">00</strong><span>Hours</span></div>
+                        <i>:</i>
+                        <div class="countdown-unit"><strong id="minutes">00</strong><span>Minutes</span></div>
+                        <i>:</i>
+                        <div class="countdown-unit"><strong id="seconds">00</strong><span>Seconds</span></div>
+                    </div>
+                    <span class="countdown-date">11 October 2026</span>
+                </div>
+
+            </div>
+            <img src="images/couple-wedding-sketch.png"
+                         alt="Red line-art wedding illustration of the couple and their cats">
+
+            
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 3 — WHERE IT ALL BEGAN
+    ====================================================== -->
+
+    <section class="chapter-section section">
+
+        <div class="container chapter-grid">
+
+
+            <div class="chapter-content reveal-left">
+
+
+
+                <h2 class="section-title">
+                    Where it all begun
+                </h2>
+
+
+                <div class="chapter-line"></div>
+
+
+                <p>
+                    We walked the same campus, never knowing we were walking toward each other. In the corridors of MSM Somewhere between canteen breaks and evening laughs, two strangers became friends, and friends became forever.
+                </p>
+
+            </div>
+
+
+
+            <div class="college-frame-wrap reveal-right">
+                <img class="college-frame-art" src="images/card-card.png" alt="Decorative photo frame" draggable="false">
+                <div class="college-slideshow">
+
+                <div class="slide active">
+
+                    <img src="images/college-1.png"
+                         alt="College memory 1">
+
+                </div>
+
+
+                <div class="slide">
+
+                    <img src="images/college-2.png"
+                         alt="College memory 2">
+
+                </div>
+
+
+                <div class="slide">
+
+                    <img src="images/college-3.png"
+                         alt="College memory 3">
+
+                </div>
+
+
+                <div class="slide slide-video">
+
+                    <video src="videos/college-4.mp4"
+                           muted
+                           loop
+                           playsinline
+                           preload="metadata"
+                           aria-label="College memory 4"></video>
+
+                </div>
+
+                
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         SECTION 5 — FORMAL INVITATION
+    ====================================================== -->
+
+    <section class="invitation-section section" id="invitation">
+
+        <div class="container center-content">
+
+            <span class="eyebrow reveal">
+                Tap the arrow
+            </span>
+
+            <div class="invitation-art-area reveal" id="invitationArtArea">
+
+                <button
+                    class="invitation-arrow"
+                    id="invitationArrow"
+                    type="button"
+                    aria-label="Reveal the invitation letter"
+                    aria-expanded="false">
+                    <span aria-hidden="true">→</span>
+                </button>
+
+                <div class="invitation-stage" id="invitationStage">
+
+                    <!-- The letter stays behind the envelope. -->
+                    <img
+                        class="invitation-letter-art"
+                        src="images/invitation-letter.png"
+                        alt="Wedding invitation letter"
+                        draggable="false">
+
+                    <!-- The envelope stays in front until the arrow is clicked. -->
+                    <img
+                        class="invitation-envelope-art"
+                        id="invitationEnvelopeArt"
+                        src="images/invitation-envelope.png"
+                        alt="Wedding envelope"
+                        draggable="false">
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SECTION 6 — THE MOMENT
+    ====================================================== -->
+
+
+    <!-- =====================================================
+         SECTION 7 — GOD'S PLAN
+    ====================================================== -->
+
+    <section class="quote-section section">
+
+        <div class="quote-container reveal">
+            <p class="simple-quote">
+                "How could i not love eyes that see
+me in all of my forms as beautiful  ? "
+            </p>
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 8 — THE WEDDING
+    ====================================================== -->
+
+    <section class="events-section section" id="wedding-day">
+
+        <div class="container wedding-day-layout">
+
+            <div class="wedding-calendar reveal">
+                <img src="images/calender.png" alt="Clear your plans — October 11, 2026" draggable="false">
+            </div>
+
+            <div class="official-invite-art reveal">
+                <img src="images/official-invite.png" alt="Official wedding invitation" draggable="false">
+            </div>
+
+            <div class="mandapam-block reveal">
+                <img src="images/mandapam.png" alt="Wedding mandapam illustration" draggable="false">
+                <p class="venue-name">Oryx Convention Centre , Oachira</p>
+            </div>
+
+            <div class="map-heading reveal">
+                <span class="small-script">Find your way to us</span>
+                <h3>We can't wait to see you there</h3>
+            </div>
+
+            <div class="map-wrapper reveal">
+                <iframe
+                    src="https://www.google.com/maps?q=9.11982,76.50814&z=16&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <a class="map-link" href="https://maps.app.goo.gl/kZtKuhRqbF6Uc7HD6" target="_blank" rel="noopener">Open this location in Google Maps ↗</a>
+
+            <div class="date-locket reveal">
+                <img src="images/datelocket.png" alt="Wedding date locket" draggable="false">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         SECTION 9 — A NOTE OF GRATITUDE
+    ====================================================== -->
+
+    <section class="memory-section section">
+
+        <div class="container">
+
+            <div class="memory-card reveal">
+                <span class="small-script">
+                    A little something to remember
+                </span>
+
+                <h2 class="section-title">
+                    Thank you for being part of our journey
+                </h2>
+
+                <div class="memory-line"></div>
+
+                <p>
+                    As we look back at all the little moments that brought us here,
+                    we feel incredibly grateful for the people who walked beside us.
+                    Your presence, your love, and your memories with us have made this
+                    journey even more beautiful.
+                </p>
+
+                <p>
+                    When you look back on our wedding, we hope you remember not just
+                    the day, but the laughter, the warmth, and the feeling of being
+                    together. Thank you for sharing this moment with us.
+                </p>
+
+                <span class="memory-signoff">
+                    With all our love, always.
+                </span>
+
+                <div class="memory-video reveal">
+                    <span class="memory-video-label">
+                        One more little memory
+                    </span>
+                    <video
+                        class="wedding-video"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="images/vid-poster.png">
+                        <source
+                            src="videos/engage.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SECTION 10 — LITTLE DANCE OF MEMORIES
+    ====================================================== -->
+
+    <section class="dance-section section" aria-label="A little dance of memories">
+        <div class="container">
+            <div class="dance-stage reveal">
+                <div class="dancer dancer-c"><img src="images/C.png" alt="Memory illustration C" draggable="false"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="dance-stage reveal">
+                <div class="dancer dancer-a"><img src="images/A.png" alt="Memory illustration A" draggable="false"></div>
+                <div class="dancer dancer-b"><img src="images/B.png" alt="Memory illustration B" draggable="false"></div>
+                <div class="dancer dancer-d"><img src="images/D.png" alt="Memory illustration D" draggable="false"></div>
+                <div class="dancer dancer-e"><img src="images/E.png" alt="Memory illustration E" draggable="false"></div>
+                <div class="dancer dancer-f"><img src="images/F.png" alt="Memory illustration F" draggable="false"></div>
+                <div class="dancer dancer-g"><img src="images/G.png" alt="Memory illustration G" draggable="false"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 10 — FOOTER
+    ====================================================== -->
+
+    <footer class="footer-section">
+
+
+        <div class="footer-illustration reveal">
+
+            <img
+                src="images/swans.png"
+                alt="Two swans forming a heart">
+
+        </div>
+
+
+        <div class="footer-content reveal">
+
+
+            <span class="small-script">
+                Until forever ♡
+            </span>
+
+
+
+
+            <h3>
+                Salman
+                <span>&</span>
+                Ameena
+            </h3>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            MADE WITH LOVE ♡
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

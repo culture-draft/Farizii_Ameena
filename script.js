@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // ==========================================
 function openInvitation() {
     // Navigate from /envelop/ to /invitation/
-    window.location.href = "../invitation/index.html";
+    window.location.href = "invitation/index.html";
 }
 
 // ==========================================
